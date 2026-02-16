@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/style.css" />
+    <link rel="stylesheet" href="../src/css/skills.css" />
     <!--icons-->
     <link
       rel="stylesheet"
@@ -12,13 +13,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--devicon-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!--aos library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--for the charts-->
+    <link rel="stylesheet" href="../path/to/apexcharts/apexcharts.css" />
+    <!---->
     <title>SAYED.M.SAYED</title>
     <link rel="icon" href="../assets/remix-fill.svg" />
   </head>
-  <body
-    class="bg-slate-950 overflow-y-hidden h-screen flex items-center justify-center text-gray-300 m-0 p-0 box-border"
-  >
-    <nav class="navbar mb-10 fixed top-0 text-slate-300 bg-transparent">
+  <body class="bg-slate-950 overflow-hidden h-screen text-gray-300">
+    <nav class="navbar mb-5 fixed top-0 text-slate-300 bg-transparent z-50">
       <div class="w-full md:flex md:items-center md:gap-2">
         <div class="flex items-center justify-between">
           <div class="navbar-start items-center justify-between max-md:w-full">
@@ -39,19 +50,16 @@
                   class="flex items-center justify-center icon-[tabler--menu-2] collapse-open:hidden size-4"
                   ><i class="text-slate-950 text-xl font-bold ri-menu-line"></i
                 ></span>
-                <span
-                  class="icon-[tabler--x] collapse-open:block hidden size-4"
-                ></span>
               </button>
             </div>
           </div>
         </div>
         <div
           id="default-navbar-collapse"
-          class="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full"
+          class="md:navbar-end collapse h-auto hidden grow basis-full w-20px overflow-hidden transition-[height] duration-300 max-md:w-full"
         >
           <ul
-            class="menu md:menu-horizontal gap-2 p-0 text-base font-bold max-md:mt-2"
+            class="menu md:menu-horizontal md:bg-transparent bg-slate-900 gap-2 p-0 text-base font-bold max-md:mt-2"
           >
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about.html">About Me</a></li>
@@ -63,6 +71,197 @@
         </div>
       </div>
     </nav>
-    <script src="/./node_modules/flyonui/flyonui.js"></script>
+
+    <div class="w-full h-full flex flex-col items-center justify-between">
+      <!--charts-->
+      <div
+        id="chart"
+        class="p-3 h-[65%] w-full gap-4 items-center flex flex-col md:flex-row justify-between rounded-lg shadow-md mt-20"
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          id="apex-column-bar-chart"
+          class="w-[95%] md:w-[95%]"
+        ></div>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="600"
+          id="apex-radial-bar-chart"
+          class="w-[40%] hidden lg:flex"
+        ></div>
+      </div>
+
+      <div class="con h-[25%] p-7 mt-2 mb-2 flex flex-col items-center w-full">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="600"
+          class="carousel mb-1 w-full"
+        >
+          <div class="group2">
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-python-plain"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-flask-original text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-django-plain-wordmark text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-fastapi-plain-wordmark text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-postgresql-plain colored text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-sqlite-plain text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-mysql-plain-wordmark text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-git-plain colored text-center"></i>
+            </div>
+          </div>
+          <div aria-hidden class="group2">
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-python-plain text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-flask-original text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-django-plain-wordmark text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-fastapi-plain-wordmark text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-postgresql-plain colored text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-sqlite-plain text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-mysql-plain-wordmark text-center"></i>
+            </div>
+            <div class="card bg-transparent flex items-center justify-center">
+              <i class="devicon-git-plain colored text-center"></i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          class="carousel mb-1 w-full"
+        >
+          <div class="group1">
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-html5-plain text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-css3-plain colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-tailwindcss-original colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-javascript-plain colored text-center"></i>
+            </div>
+
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-typescript-plain colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-react-original colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-mongodb-plain-wordmark colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-github-original text-center"></i>
+            </div>
+          </div>
+          <div aria-hidden class="group1">
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-html5-plain text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-css3-plain colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-tailwindcss-original colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-javascript-plain colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-typescript-plain colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-react-original colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-mongodb-plain-wordmark colored text-center"></i>
+            </div>
+            <div class="card bg-transparent font-bold text-2xl text-center">
+              <i class="devicon-github-original text-center"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-full h-[2%] p-5 bottom-0 bg-slate-900 flex justify-evenly items-center"
+      >
+        <a
+          href="https://github.com/Sayed-Mohamed8114/Portfolio_"
+          class="text-slate-300 hover:scale-160 text-bold flex items-center justify-center duration-700 transition-transform ease-in-out cursor-pointer w-[50%]"
+          >&COPY; SAYED</a
+        >
+        <ul class="flex gap-3 md:gap-5 justify-center items-center w-[50%]">
+          <a
+            class="hover:scale-150 transition-transform ease-in-out duration-500"
+            href="https://github.com/Sayed-Mohamed8114/"
+            ><i class="ri-github-fill text-center font-bold text-slate-50"></i
+          ></a>
+          <a
+            class="hover:scale-150 transition-transform ease-in-out duration-500"
+            href=""
+          >
+            <i class="ri-facebook-fill text-center font-bold text-slate-50"></i>
+          </a>
+          <a
+            class="hover:scale-150 transition-transform ease-in-out duration-500"
+            href=""
+          >
+            <i class="ri-whatsapp-line text-center font-bold text-slate-50"></i>
+          </a>
+          <a
+            class="hover:scale-150 transition-transform ease-in-out duration-500"
+            href="https://www.linkedin.com/in/sayed-mohamed-xyz8112004/"
+          >
+            <i class="ri-linkedin-fill text-center font-bold text-slate-50"></i
+          ></a>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="../node_modules/flyonui/dist/helper-apexcharts.js"></script>
+    <script src="../node_modules/flyonui/dist/flyonui.js"></script>
+
+    <script src="../src/js/skills.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

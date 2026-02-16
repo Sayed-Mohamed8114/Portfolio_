@@ -1,0 +1,65 @@
+.carousel {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.group1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  animation: spin 14s infinite linear;
+  padding-right: 0.1em;
+}
+
+.group2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1em;
+  animation: spin2 14s infinite linear;
+  padding-right: 0.1em;
+}
+
+.card {
+  flex: 0 0 5em;
+  height: auto;
+  padding: 1em;
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+@keyframes spin2 {
+  from {
+    translate: -100%;
+  }
+  to {
+    translate: 0;
+  }
+}
+
+.con.paused .group1,
+.con.paused .group2 {
+  animation-play-state: paused;
+}
+
+.card:hover {
+  animation-play-state: paused;
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}

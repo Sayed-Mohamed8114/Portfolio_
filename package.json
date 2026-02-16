@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
+    "apexcharts": "^5.4.0",
+    "loadsh": "^0.0.4",
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {

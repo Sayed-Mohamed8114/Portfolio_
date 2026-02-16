@@ -12,13 +12,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--aos js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>SAYED.M.SAYED</title>
     <link rel="icon" href="../assets/remix-fill.svg" />
   </head>
   <body
-    class="bg-slate-950 overflow-y-hidden h-screen flex items-center justify-center text-gray-300 m-0 p-0 box-border"
+    class="bg-slate-950 overflow-hidden min-h-screen flex flex-col items-center justify-center text-gray-300 m-0 p-0 box-border"
   >
-    <nav class="navbar mb-10 fixed top-0 text-slate-300 bg-transparent">
+    <nav class="navbar mb-10 fixed top-0 text-slate-300 bg-transparent z-50">
       <div class="w-full md:flex md:items-center md:gap-2">
         <div class="flex items-center justify-between">
           <div class="navbar-start items-center justify-between max-md:w-full">
@@ -51,7 +53,7 @@
           class="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full"
         >
           <ul
-            class="menu md:menu-horizontal gap-2 p-0 text-base font-bold max-md:mt-2"
+            class="menu md:menu-horizontal md:bg-transparent bg-slate-900 gap-2 p-0 text-base font-bold max-md:mt-2"
           >
             <li><a href="../index.html">Home</a></li>
             <li><a href="./about.html">About Me</a></li>
@@ -63,6 +65,186 @@
         </div>
       </div>
     </nav>
-    <script src="/./node_modules/flyonui/flyonui.js"></script>
+
+    <!--main section-->
+    <main class="items-center justify-center w-[95%] flex flex-col">
+      <section
+        class="w-full p-2 mt-10 items-center text-center justify-center flex"
+      >
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="3000"
+          class="w-[100%] md:w-[60%] h-full flex items-center justify-center"
+        >
+          <div
+            class="bg-slate-950 w-full rounded-lg shadow-base-300/20 shadow-sm"
+          >
+            <div class="w-full p-4">
+              <form class="needs-validation peer grid gap-y-4" novalidate>
+                <!-- Account Details -->
+                <div class="w-full">
+                  <h6 class="text-2xl font-bold text-center">Contact Me</h6>
+                  <hr class="mb-4 mt-2" />
+                </div>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                  <div>
+                    <label class="label-text font-bold" for="firstName"
+                      >First Name
+                    </label>
+                    <input
+                      id="firstName"
+                      type="text"
+                      placeholder="sayed"
+                      class="input bg-slate-800"
+                      required
+                    />
+                    <span class="error-message">Please enter your name.</span>
+                    <span class="success-message">Looks good!</span>
+                  </div>
+                  <div>
+                    <label class="label-text font-bold" for="lastName"
+                      >Last Name</label
+                    >
+                    <input
+                      id="lastName"
+                      type="text"
+                      placeholder="Mohamed"
+                      class="input bg-slate-800"
+                      required
+                    />
+                    <span class="error-message"
+                      >Please enter your last name.</span
+                    >
+                    <span class="success-message">Looks good!</span>
+                  </div>
+                </div>
+                <!-- Email and password -->
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                  <div>
+                    <label class="label-text font-bold" for="userEmail"
+                      >Email</label
+                    >
+                    <input
+                      id="userEmail"
+                      type="email"
+                      class="input bg-slate-800"
+                      placeholder="sayed@gmail.com"
+                      aria-label="sayed@gmail.com"
+                      required=""
+                    />
+                    <span class="error-message"
+                      >Please enter a valid email</span
+                    >
+                    <span class="success-message">Looks good!</span>
+                  </div>
+                  <div>
+                    <label class="label-text font-bold" for="userCountry"
+                      >Pick your Country</label
+                    >
+                    <select
+                      class="select bg-slate-800"
+                      id="userCountry"
+                      aria-label="Select Country"
+                      required
+                    >
+                      <option value="">Select Country</option>
+                      <option value="usa">Egypt</option>
+                      <option value="uk">Emirates</option>
+                      <option value="france">Suadia</option>
+                      <option value="australia">Lebon</option>
+                      <option value="spain">Spain</option>
+                    </select>
+                    <span class="error-message"
+                      >Please select your country</span
+                    >
+                    <span class="success-message">Looks good!</span>
+                  </div>
+                </div>
+                <!-- Personal Info -->
+
+                <div class="w-full">
+                  <label class="label-text font-bold" for="userBio"
+                    >How can i help?</label
+                  >
+                  <textarea
+                    class="textarea min-h-20 bg-slate-800 resize-none"
+                    id="userBio"
+                    placeholder="Just tell me"
+                    required=""
+                  ></textarea>
+                  <span class="error-message">Please write few words</span>
+                  <span class="success-message">Looks good!</span>
+                </div>
+                <div>
+                  <span class="error-message"
+                    >Please select your preference</span
+                  >
+                  <span class="success-message">Looks good!</span>
+                </div>
+                <!-- Submit button -->
+                <div class="mt-4">
+                  <button
+                    type="submit"
+                    name="submitButton"
+                    class="btn btn-gradient font-bold text-slate-800"
+                  >
+                    Send now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[40%] h-full hidden md:flex items-center justify-center"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
+          <img
+            src="../assets/Feb 16, 2026, 04_24_15 PM.png"
+            alt="main picture"
+            class="w-full h-full flex items-center mr-20 mb-50 justify-center"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="w-full md:fixed md:bottom-0 h-10 bg-slate-900 flex items-center justify-evenly"
+    >
+      <a
+        href="https://github.com/Sayed-Mohamed8114/Portfolio_"
+        class="text-slate-300 hover:scale-160 text-bold flex items-center justify-center duration-700 transition-transform ease-in-out cursor-pointer w-[50%]"
+        >&COPY; SAYED</a
+      >
+      <ul class="flex gap-3 md:gap-5 justify-center items-center w-[50%]">
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href="https://github.com/Sayed-Mohamed8114/"
+          ><i class="ri-github-fill text-center font-bold text-slate-50"></i
+        ></a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href=""
+        >
+          <i class="ri-facebook-fill text-center font-bold text-slate-50"></i>
+        </a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href=""
+        >
+          <i class="ri-whatsapp-line text-center font-bold text-slate-50"></i>
+        </a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href="https://www.linkedin.com/in/sayed-mohamed-xyz8112004/"
+        >
+          <i class="ri-linkedin-fill text-center font-bold text-slate-50"></i
+        ></a>
+      </ul>
+    </footer>
+    <script src="../node_modules/flyonui/flyonui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../src/js/contact.js"></script>
   </body>
 </html>

@@ -1,0 +1,25 @@
+@keyframes border-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-border-container::before {
+  content: "";
+  position: absolute;
+  /* Size it larger than the container so the rotation is visible at the edges */
+  width: 150%;
+  height: 150%;
+
+  /* Creates a slate-300 line that is roughly 10% of the circumference */
+  background: conic-gradient(
+    transparent 0deg,
+    transparent 320deg,
+    #cbd5e1 360deg
+  );
+
+  animation: border-rotate 4s linear infinite;
+}

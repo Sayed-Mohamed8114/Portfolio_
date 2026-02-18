@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/style.css" />
+    <link rel="stylesheet" href="../src/css/about.css" />
     <!--icons-->
     <link
       rel="stylesheet"
@@ -16,9 +17,9 @@
     <link rel="icon" href="../assets/remix-fill.svg" />
   </head>
   <body
-    class="bg-slate-950 overflow-y-hidden h-screen flex items-center justify-center text-gray-300 m-0 p-0 box-border"
+    class="bg-slate-950 overflow-hidden min-h-screen flex items-center justify-center text-gray-300 m-0 p-0 box-border"
   >
-    <nav class="navbar mb-10 fixed top-0 text-slate-300 bg-transparent">
+    <nav class="navbar z-20 mb-10 fixed top-0 text-slate-300 bg-transparent">
       <div class="w-full md:flex md:items-center md:gap-2">
         <div class="flex items-center justify-between">
           <div class="navbar-start items-center justify-between max-md:w-full">
@@ -63,6 +64,87 @@
         </div>
       </div>
     </nav>
+    <main
+      class="w-full h-screen mt-30 flex flex-col justify-center items-center"
+    >
+      <figure class="relative flex justify-center items-center w-full py-10">
+        <div
+          class="spinning-border-container relative flex items-center justify-center w-48 h-48 rounded-full overflow-hidden bg-slate-900 shadow-xl"
+        >
+          <img
+            src="../assets/WhatsApp Image 2026-02-16 at 3.51.19 PM.jpeg"
+            alt="me"
+            class="z-10 h-[95%] w-[95%] rounded-full object-cover border-4 border-slate-800 bg-slate-900"
+          />
+        </div>
+      </figure>
+      <h1 class="font-2xl text-center text-slate-300 font-bold">
+        Hello, I'm Sayed Mohamed
+      </h1>
+      <div class="flex flex-col justify-center items-center h-[30vh] mb-40">
+        <p
+          class="text-slate-500 p-3 font-medium text-center tracking-tight text-base max-w-2xl mx-auto leading-relaxed"
+        >
+          As a Computer Science student at Assiut University and a Full-Stack
+          Developer specializing in
+          <span class="text-slate-300 font-bold">Python and React</span>, I
+          bridge the gap between robust logic and intuitive interfaces. I offer
+          fast, data-driven solutions with a meticulous focus on your specific
+          project requirements.
+        </p>
+        <div class="w-[50%] mt-5 flex gap-3 items-center justify-center">
+          <button
+            type="button"
+            class="btn btn-gradient"
+            onclick="window.location.href = '../pages/projects.html'"
+          >
+            See Projects
+          </button>
+          <button
+            type="button"
+            class="btn btn-gradient"
+            onclick="window.location.href = '../pages/contact.html'"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="w-full fixed bottom-0 h-10 bg-slate-900 flex items-center justify-evenly"
+    >
+      <a
+        href="https://github.com/Sayed-Mohamed8114/Portfolio_"
+        class="text-slate-300 hover:scale-160 text-bold flex items-center justify-center duration-700 transition-transform ease-in-out cursor-pointer w-[50%]"
+        >&COPY; SAYED</a
+      >
+      <ul class="flex gap-3 md:gap-5 justify-center items-center w-[50%]">
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href="https://github.com/Sayed-Mohamed8114/"
+          ><i class="ri-github-fill text-center font-bold text-slate-50"></i
+        ></a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href=""
+        >
+          <i class="ri-facebook-fill text-center font-bold text-slate-50"></i>
+        </a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href=""
+        >
+          <i class="ri-whatsapp-line text-center font-bold text-slate-50"></i>
+        </a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href="https://www.linkedin.com/in/sayed-mohamed-xyz8112004/"
+        >
+          <i class="ri-linkedin-fill text-center font-bold text-slate-50"></i
+        ></a>
+      </ul>
+    </footer>
     <script src="/./node_modules/flyonui/flyonui.js"></script>
     <script src="../src/js/about.js"></script>
   </body>

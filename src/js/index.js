@@ -25,7 +25,7 @@ document.addEventListener("mousemove",(event)=>{
     });
 })
 
-let words=[ " Sayed Mohamed ", " a Software Engineer "," a web Developer "," a Data analyst "];
+let words=[ " Sayed Mohamed ", " a Software Engineer "," a web Developer "];
 let i=0;
 let j=0;
 let currentword="";

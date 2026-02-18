@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/style.css" />
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--icons-->
     <link
       rel="stylesheet"
@@ -12,13 +14,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>SAYED.M.SAYED</title>
     <link rel="icon" href="../assets/remix-fill.svg" />
   </head>
   <body
-    class="bg-slate-950 overflow-y-hidden h-screen flex items-center justify-center text-gray-300 m-0 p-0 box-border"
+    class="bg-slate-950 overflow-x-hidden h-screen flex-col flex items-center justify-center text-gray-300 m-0 p-0 box-border"
   >
-    <nav class="navbar mb-10 fixed top-0 text-slate-300 bg-transparent">
+    <nav
+      class="navbar mb-20 fixed top-0 text-slate-300 lg:bg-transparent bg-slate-950 z-10"
+    >
       <div class="w-full md:flex md:items-center md:gap-2">
         <div class="flex items-center justify-between">
           <div class="navbar-start items-center justify-between max-md:w-full">
@@ -64,7 +71,157 @@
       </div>
     </nav>
 
+    <main
+      class="bg-slate-950 w-full mt-20 overflow-x-hidden items-center justify-between gap-5 h-auto flex flex-col"
+    >
+      <h1
+        class="text-slate-300 md:mt-20 lg:mt-10 mb-5 text-center font-bold text-xl md:text-3xl"
+      >
+        What I offer?
+      </h1>
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+        class="w-[95%] h-auto mb-15 md:mb-20 lg:mb-20 grid grid-cols-1 text-center sm:grid-cols-2 gap-y-5 gap-x-2 lg:grid-cols-3 items-center justify-center"
+      >
+        <!--card1-->
+        <div
+          class="card sm:max-w-sm bg-slate-900 shadow-slate-500 shadow-sm hover:shadow-lg hover:scale-110 duration-700 transition-transform"
+        >
+          <div class="card-header">
+            <h5 class="card-title">UI/UX Design</h5>
+          </div>
+          <div class="card-body">
+            <p>
+              UI (User Interface) is the visual skin of your product, while UX
+              (User Experience) is the skeletal structure and logic.
+            </p>
+          </div>
+        </div>
+
+        <!--card 2-->
+        <div
+          class="card sm:max-w-sm bg-slate-900 shadow-slate-500 shadow-sm hover:shadow-lg hover:scale-110 duration-700 transition-transform"
+        >
+          <div class="card-header">
+            <h5 class="card-title">Landing pages</h5>
+          </div>
+          <div class="card-body">
+            <p>
+              Landing Page is a single-focus web page designed specifically for
+              a marketing or advertising campaign.
+            </p>
+          </div>
+        </div>
+
+        <!--card 3-->
+        <div
+          class="card sm:max-w-sm bg-slate-900 shadow-slate-500 shadow-sm hover:shadow-lg hover:scale-110 duration-700 transition-transform"
+        >
+          <div class="card-header">
+            <h5 class="card-title">Dashbord/admin panel</h5>
+          </div>
+          <div class="card-body">
+            <p>
+              An Admin Panel is a private control center used to manage the data
+              and users of a web application.
+            </p>
+          </div>
+        </div>
+
+        <!--card 4-->
+        <div
+          class="card sm:max-w-sm bg-slate-900 shadow-slate-500 shadow-sm hover:shadow-lg hover:scale-110 duration-700 transition-transform"
+        >
+          <div class="card-header">
+            <h5 class="card-title">E-commerce panel</h5>
+          </div>
+          <div class="card-body">
+            <p>
+              The E-commerce Panel is the "brain" behind your online store,
+              allowing you to manage products, inventory, and customer orders in
+              real-time.
+            </p>
+          </div>
+        </div>
+
+        <!--card 5-->
+        <div
+          class="card sm:max-w-sm bg-slate-900 shadow-slate-500 shadow-sm hover:shadow-lg hover:scale-110 duration-700 transition-transform"
+        >
+          <div class="card-header">
+            <h5 class="card-title">Web app</h5>
+          </div>
+          <div class="card-body">
+            <p>
+              Web Application is a dynamic program that runs in a browser,
+              offering functionality far beyond a standard website.
+            </p>
+          </div>
+        </div>
+
+        <!--card 6-->
+        <div
+          class="card sm:max-w-sm bg-slate-900 shadow-slate-500 shadow-sm hover:shadow-lg hover:scale-110 duration-700 transition-transform"
+        >
+          <div class="card-header">
+            <h5 class="card-title">Complete fullstack project</h5>
+          </div>
+          <div class="card-body">
+            <p>
+              A Fullstack Project is the "total package," covering both the
+              Front-end (what the user sees) and the Back-end (server, database,
+              and logic).
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="w-full fixed bottom-0 h-10 bg-slate-900 flex items-center justify-evenly"
+    >
+      <a
+        href="https://github.com/Sayed-Mohamed8114/Portfolio_"
+        class="text-slate-300 hover:scale-160 text-bold flex items-center justify-center duration-700 transition-transform ease-in-out cursor-pointer w-[50%]"
+        >&COPY; SAYED</a
+      >
+      <ul class="flex gap-3 md:gap-5 justify-center items-center w-[50%]">
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href="https://github.com/Sayed-Mohamed8114/"
+          ><i class="ri-github-fill text-center font-bold text-slate-50"></i
+        ></a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href=""
+        >
+          <i class="ri-facebook-fill text-center font-bold text-slate-50"></i>
+        </a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href=""
+        >
+          <i class="ri-whatsapp-line text-center font-bold text-slate-50"></i>
+        </a>
+        <a
+          class="hover:scale-150 transition-transform ease-in-out duration-500"
+          href="https://www.linkedin.com/in/sayed-mohamed-xyz8112004/"
+        >
+          <i class="ri-linkedin-fill text-center font-bold text-slate-50"></i
+        ></a>
+      </ul>
+    </footer>
     <script src="/./node_modules/flyonui/flyonui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../src/js/services.js"></script>
+    <script>
+      AOS.init({
+        disable: false, // تأكد أنها ليست 'mobile'
+        startEvent: "DOMContentLoaded",
+        offset: 120, // المسافة التي يبدأ عندها الأنميشن
+        once: false, // اجعلها true إذا أردت الأنميشن مرة واحدة فقط
+      });
+    </script>
   </body>
 </html>

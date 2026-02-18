@@ -13,6 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--aos library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>SAYED.M.SAYED</title>
     <link rel="icon" href="../assets/remix-fill.svg" />
   </head>
@@ -67,8 +70,12 @@
     <main
       class="w-full h-screen mt-30 flex flex-col justify-center items-center"
     >
-      <figure class="relative flex justify-center items-center w-full py-10">
+      <figure
+        class="relative flex justify-center items-center mt-10 w-full py-10"
+      >
         <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
           class="spinning-border-container relative flex items-center justify-center w-48 h-48 rounded-full overflow-hidden bg-slate-900 shadow-xl"
         >
           <img
@@ -94,6 +101,8 @@
         </p>
         <div class="w-[50%] mt-5 flex gap-3 items-center justify-center">
           <button
+            data-aos="fade-right"
+            data-aos-duration="1500"
             type="button"
             class="btn btn-gradient"
             onclick="window.location.href = '../pages/projects.html'"
@@ -101,6 +110,8 @@
             See Projects
           </button>
           <button
+            data-aos="fade-left"
+            data-aos-duration="1500"
             type="button"
             class="btn btn-gradient"
             onclick="window.location.href = '../pages/contact.html'"
@@ -146,6 +157,10 @@
       </ul>
     </footer>
     <script src="/./node_modules/flyonui/flyonui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../src/js/about.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
